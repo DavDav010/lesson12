@@ -1,0 +1,19 @@
+.section-bg{
+    background-color: lightblue;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        .left-block{
+            width: 400px;
+            height: 400px;
+            background-color: $color01;
+            font-family: $font01;
+        }
+        .right-block{
+            width: 400px;
+            height: 400px;
+            background-color: $color02;
+            font-family: $font02; 
+        }
+    }
+}
