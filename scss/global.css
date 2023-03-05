@@ -47,18 +47,36 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Brygada 1918";
+  src: url("../fonts/Brygada1918-Italic.woff2") format("woff2"), url("../fonts/Brygada1918-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 .section-bg {
   background-color: lightblue;
 }
 .section-bg .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .section-bg .wrapper .left-block {
   width: 400px;
   height: 400px;
   background-color: red;
-  font-family: "Tilt Prism", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-bg .wrapper .left-block p {
+  font-family: "Brygada 1918";
+  border: 2px solid aqua;
+  transition: all 5s linear;
+}
+.section-bg .wrapper .left-block p:hover {
+  color: lime;
 }
 .section-bg .wrapper .right-block {
   width: 400px;
